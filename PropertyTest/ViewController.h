@@ -22,8 +22,9 @@
 
 - (NSString *)unsafe_iVarString;
 
-@property (copy, nonatomic) NSString *propertyString;
+@property (copy, nonatomic) NSString *copyedPropertyString;
 @property (strong, nonatomic) NSString *strongPropertyString;
+@property (weak, nonatomic) NSString *weakPropertyString;
 
 @property (copy, nonatomic) void (^retainTestBlock)(void);
 
