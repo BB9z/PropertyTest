@@ -24,26 +24,7 @@ printf("%s\n", [[NSString stringWithFormat:__VA_ARGS__] UTF8String])
 
 - (void)strongPropertyStringTest {
     printf("\n* Strong property string test\n\n");
-    
-    @autoreleasepool {
-        printf("-- Test: string change\n");
-        NSMutableString *str = [NSMutableString stringWithString:@"S1"];
         
-        self.strongPropertyString = str;
-        printf("Set strong property: ");
-        douto(self.strongPropertyString)
-        
-        self.copyedPropertyString = str;
-        printf("Set copyed property: ");
-        douto(self.copyedPropertyString)
-
-        printf("\nChange string:\n");
-        [str appendString:@" and something"];
-        
-        douto(self.strongPropertyString);
-        douto(self.copyedPropertyString);
-    }
-    
     __weak NSString *weakStringRef = nil;
     
     printf("\n-- Memory Test: strong property\n");
@@ -137,6 +118,88 @@ printf("%s\n", [[NSString stringWithFormat:__VA_ARGS__] UTF8String])
     dout_int([self.weakPropertyString d_retainCount])
 }
 
+- (void)immutablePropertyTest {
+    printf("\n* Immutable/mutable and uncopy/copyed property test\n");
+
+    printf("\n-- Mutable property cannot be copyed.\n");
+    @autoreleasepool {
+        @try {
+            Person *testPerson = [[Person alloc] init];
+            testPerson.copyedMutableArray = [NSMutableArray arrayWithCapacity:10];
+            dout_bool([[NSMutableArray arrayWithCapacity:10] respondsToSelector:@selector(addObject:)])
+            dout_bool([testPerson.copyedMutableArray respondsToSelector:@selector(addObject:)])
+            [testPerson.copyedMutableArray addObject:@"Add object to copyedMutableArray"];
+            douto(testPerson)
+        }
+        @catch (NSException *exception) {
+            douto(exception)
+        }
+    }
+    
+    printf("\n-- Strong immutable property:\n");
+    @autoreleasepool {
+        NSMutableArray *aMutableArray = [@[ @1, @YES, @"Array" ] mutableCopy];
+        self.strongImmutableArray = aMutableArray;
+        printf("@property (strong, nonatomic): ");
+        douto(self.strongImmutableArray)
+        
+        printf("\nArray changed now, all objects removed.\n");
+        [aMutableArray removeAllObjects];
+        douto(self.strongImmutableArray)
+        
+        doutp(aMutableArray)
+        doutp(self.strongImmutableArray)
+    }
+    
+    printf("\n-- Copy immutable property:\n");
+    @autoreleasepool {
+        NSMutableArray *aMutableArray = [@[ @1, @YES, @"Array" ] mutableCopy];
+        self.copyedImmutableArray = aMutableArray;
+        printf("@property (copy, nonatomic): ");
+        douto(self.copyedImmutableArray)
+        
+        printf("\nArray changed now, all objects removed.\n");
+        [aMutableArray removeAllObjects];
+        douto(self.copyedImmutableArray)
+        
+        doutp(aMutableArray)
+        doutp(self.copyedImmutableArray)
+    }
+    
+    printf("\n-- Strong mutable property:\n");
+    @autoreleasepool {
+        NSMutableArray *aMutableArray = [@[ @1, @YES, @"Array" ] mutableCopy];
+        self.strongMutableArray = aMutableArray;
+        printf("@property (strong, nonatomic): ");
+        douto(self.strongMutableArray)
+        
+        printf("\nArray changed now, all objects removed.\n");
+        [aMutableArray removeAllObjects];
+        douto(self.strongMutableArray)
+        
+        doutp(aMutableArray)
+        doutp(self.strongMutableArray)
+    }
+    
+    printf("\n-- Another test using string.\n");
+    @autoreleasepool {
+        NSMutableString *str = [NSMutableString stringWithString:@"S1"];
+        
+        self.strongPropertyString = str;
+        printf("Set strong property: ");
+        douto(self.strongPropertyString)
+        
+        self.copyedPropertyString = str;
+        printf("Set copyed property: ");
+        douto(self.copyedPropertyString)
+        
+        printf("\nChange string:\n");
+        [str appendString:@" and something"];
+        
+        douto(self.strongPropertyString);
+        douto(self.copyedPropertyString);
+    }
+}
 
 - (void)blockRetainTestIVar {
     __weak __typeof(&*self)weakSelf = self;
@@ -188,7 +251,7 @@ printf("%s\n", [[NSString stringWithFormat:__VA_ARGS__] UTF8String])
 
         NSString *constantString = @"Example1";
         douto(constantString)
-        dout_int([constantString d_retainCount])                         // -1
+        dout_int([constantString d_retainCount])                            // -1
         printf("\n");
         
         NSString *stringInitFromString = [[NSString alloc] initWithString:@"Example2"];    // 直接变成常量，并会产生警告
@@ -213,10 +276,17 @@ printf("%s\n", [[NSString stringWithFormat:__VA_ARGS__] UTF8String])
     }
     
     
-    // Strong property ivar access test
+    // Property vs. iVar access test
     @autoreleasepool {
         Person *aPerson = [[Person alloc] init];
         [aPerson iVarAccessTest];
+    }
+    
+    
+    // Immutable array property test
+    @autoreleasepool {
+        Person *aPerson = [[Person alloc] init];
+        [aPerson immutablePropertyTest];
     }
     
     

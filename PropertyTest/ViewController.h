@@ -26,6 +26,11 @@
 @property (strong, nonatomic) NSString *strongPropertyString;
 @property (weak, nonatomic) NSString *weakPropertyString;
 
+@property (strong, nonatomic) NSArray *strongImmutableArray;
+@property (copy, nonatomic) NSArray *copyedImmutableArray;
+@property (strong, nonatomic) NSMutableArray *strongMutableArray;
+@property (copy, nonatomic) NSMutableArray *copyedMutableArray;
+
 @property (copy, nonatomic) void (^retainTestBlock)(void);
 
 - (void)blockRetainTestStrongSelf;
