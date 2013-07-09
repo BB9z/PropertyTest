@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D500442517116B2F0075B02A /* dout.m in Sources */ = {isa = PBXBuildFile; fileRef = D50043F317116B2F0075B02A /* dout.m */; };
+		D520050C178C100D00FEA64B /* RACKVOWrapperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D520050B178C100D00FEA64B /* RACKVOWrapperTest.m */; };
 		D5A00CF1170E47B2009734AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A00CF0170E47B2009734AA /* UIKit.framework */; };
 		D5A00CF3170E47B2009734AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A00CF2170E47B2009734AA /* Foundation.framework */; };
 		D5A00CF5170E47B2009734AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A00CF4170E47B2009734AA /* CoreGraphics.framework */; };
@@ -48,6 +49,8 @@
 		D500440017116B2F0075B02A /* RFARC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFARC.h; sourceTree = "<group>"; };
 		D500440117116B2F0075B02A /* RFFeatureSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFFeatureSupport.h; sourceTree = "<group>"; };
 		D500440B17116B2F0075B02A /* RFRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFRuntime.h; sourceTree = "<group>"; };
+		D520050A178C100D00FEA64B /* RACKVOWrapperTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACKVOWrapperTest.h; sourceTree = "<group>"; };
+		D520050B178C100D00FEA64B /* RACKVOWrapperTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACKVOWrapperTest.m; sourceTree = "<group>"; };
 		D5A00CED170E47B2009734AA /* PropertyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PropertyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5A00CF0170E47B2009734AA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D5A00CF2170E47B2009734AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -162,6 +165,7 @@
 		D5A00CF6170E47B2009734AA /* PropertyTest */ = {
 			isa = PBXGroup;
 			children = (
+				D5A00CF7170E47B2009734AA /* Supporting Files */,
 				D5A00CFF170E47B2009734AA /* AppDelegate.h */,
 				D5A00D00170E47B2009734AA /* AppDelegate.m */,
 				D5A00D08170E47B2009734AA /* MainStoryboard.storyboard */,
@@ -169,7 +173,6 @@
 				D5A00D0C170E47B2009734AA /* ViewController.m */,
 				D5A00D93170E4D48009734AA /* NSObject+ARCDebug.h */,
 				D5A00D94170E4D48009734AA /* NSObject+ARCDebug.m */,
-				D5A00CF7170E47B2009734AA /* Supporting Files */,
 			);
 			path = PropertyTest;
 			sourceTree = "<group>";
@@ -191,9 +194,11 @@
 		D5DBA309178128F30026C7CD /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				D5DBA30A178128F30026C7CD /* Supporting Files */,
+				D520050A178C100D00FEA64B /* RACKVOWrapperTest.h */,
+				D520050B178C100D00FEA64B /* RACKVOWrapperTest.m */,
 				D5DBA30F178128F30026C7CD /* Test.h */,
 				D5DBA310178128F30026C7CD /* Test.m */,
-				D5DBA30A178128F30026C7CD /* Supporting Files */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -360,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5DBA311178128F30026C7CD /* Test.m in Sources */,
+				D520050C178C100D00FEA64B /* RACKVOWrapperTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,14 +490,21 @@
 		D5DBA313178128F30026C7CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/${PROJECT_NAME:rfc1034identifier}.app/${PROJECT_NAME:rfc1034identifier}";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Test/Test-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"DOUT_FALG_TRACE=1",
+				);
 				INFOPLIST_FILE = "Test/Test-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -499,6 +512,7 @@
 		D5DBA314178128F30026C7CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/${PROJECT_NAME:rfc1034identifier}.app/${PROJECT_NAME:rfc1034identifier}";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
@@ -507,6 +521,7 @@
 				GCC_PREFIX_HEADER = "Test/Test-Prefix.pch";
 				INFOPLIST_FILE = "Test/Test-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -539,6 +554,7 @@
 				D5DBA314178128F30026C7CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
