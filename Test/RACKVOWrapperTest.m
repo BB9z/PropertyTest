@@ -25,6 +25,22 @@ static void *const TestKVOContext = (void *)&TestKVOContext;
     }
 }
 
+- (void)testObserveSelfRetain {
+    __weak TestObject *weakRef;
+
+    @autoreleasepool {
+        TestObject *obj = [[TestObject alloc] init];
+        weakRef = obj;
+        [weakRef rac_addObserver:weakRef forKeyPath:@keypath(weakRef, count) options:NSKeyValueObservingOptionNew queue:nil block:^(id observer, NSDictionary *change) {
+            dout(@"Count changed: %d", weakRef.count);
+        }];
+        
+        weakRef.count = 999;
+        weakRef.count = 888;
+    }
+    XCTAssertNil(weakRef, @"Retain?");
+}
+
 - (void)testTraditionalKVORetainTest {
     __weak TestObject *weakRef;
     @autoreleasepool {
