@@ -6,9 +6,9 @@
 //
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface RACKVOWrapperTest : SenTestCase
+@interface RACKVOWrapperTest : XCTestCase
 
 @end
 

@@ -35,7 +35,7 @@ static void *const TestKVOContext = (void *)&TestKVOContext;
         dout_int([obj d_retainCount]);
         [obj removeObserver:self forKeyPath:@keypath(obj, count)];
     }
-    STAssertNil(weakRef, @"Tradition KVO not retain observer, but you must remove observer");
+    XCTAssertNil(weakRef, @"Tradition KVO not retain observer, but you must remove observer");
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
