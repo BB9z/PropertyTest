@@ -23,7 +23,6 @@
 		D5DBA307178128F30026C7CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A00CF0170E47B2009734AA /* UIKit.framework */; };
 		D5DBA308178128F30026C7CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A00CF2170E47B2009734AA /* Foundation.framework */; };
 		D5DBA30E178128F30026C7CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5DBA30C178128F30026C7CD /* InfoPlist.strings */; };
-		D5DBA311178128F30026C7CD /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DBA310178128F30026C7CD /* Test.m */; };
 		D5DBA32717812AB00026C7CD /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DBA31B17812AB00026C7CD /* EXTScope.m */; };
 		D5DBA32917812AB00026C7CD /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DBA32117812AB00026C7CD /* JRSwizzle.m */; };
 		D5DBA32B17812AB00026C7CD /* NSObject+RACKVOWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DBA32417812AB00026C7CD /* NSObject+RACKVOWrapper.m */; };
@@ -69,8 +68,6 @@
 		D5DBA304178128F30026C7CD /* Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5DBA30B178128F30026C7CD /* Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
 		D5DBA30D178128F30026C7CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D5DBA30F178128F30026C7CD /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
-		D5DBA310178128F30026C7CD /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 		D5DBA312178128F30026C7CD /* Test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Test-Prefix.pch"; sourceTree = "<group>"; };
 		D5DBA31917812AB00026C7CD /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTKeyPathCoding.h; sourceTree = "<group>"; };
 		D5DBA31A17812AB00026C7CD /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
@@ -191,8 +188,6 @@
 				D5DBA30A178128F30026C7CD /* Supporting Files */,
 				D520050A178C100D00FEA64B /* RACKVOWrapperTest.h */,
 				D520050B178C100D00FEA64B /* RACKVOWrapperTest.m */,
-				D5DBA30F178128F30026C7CD /* Test.h */,
-				D5DBA310178128F30026C7CD /* Test.m */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -356,7 +351,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5DBA311178128F30026C7CD /* Test.m in Sources */,
 				D520050C178C100D00FEA64B /* RACKVOWrapperTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
