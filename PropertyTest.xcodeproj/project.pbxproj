@@ -121,7 +121,8 @@
 				D500440117116B2F0075B02A /* RFFeatureSupport.h */,
 				D500440B17116B2F0075B02A /* RFRuntime.h */,
 			);
-			path = RFKit;
+			name = RFKit;
+			path = RFUI/Core/RFKit;
 			sourceTree = "<group>";
 		};
 		D5A00CE4170E47B1009734AA = {
