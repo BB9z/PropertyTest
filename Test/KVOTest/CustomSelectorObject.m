@@ -22,7 +22,7 @@ static id CustomSelectorObjectPropertyC;
 
 - (void)setPropertyA:(NSNumber *)propertyA {
     // 这里 willChangeValueForKey/didChangeValueForKey 是不需要添加的
-    // http://stackoverflow.com/q/14158338
+    // http://stackoverflow.com/a/3261294/945906
     if (_propertyA != propertyA) {
         _propertyA = propertyA;
     }
