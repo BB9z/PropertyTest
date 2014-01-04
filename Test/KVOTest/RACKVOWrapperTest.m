@@ -7,7 +7,6 @@
 //
 
 #import "RACKVOWrapperTest.h"
-#import "dout.h"
 #import "NSObject+ARCDebug.h"
 
 static void *const TestKVOContext = (void *)&TestKVOContext;

@@ -12,6 +12,13 @@
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
+        printf("\
+PropertyTest\n\
+属性相关的测试与演示 \n\
+\n\
+(c) 2013-2014 BB9z\n\
+========================================\n\n");
+
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }
