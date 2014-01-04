@@ -10,6 +10,9 @@
 
 static id CustomSelectorObjectPropertyC;
 
+@interface CustomSelectorObject ()
+@end
+
 @implementation CustomSelectorObject
 @synthesize propertyA = _propertyA;
 
@@ -36,5 +39,20 @@ static id CustomSelectorObjectPropertyC;
     CustomSelectorObjectPropertyC = propertyC;
 }
 
+
+@end
+
+// 甚至在 category 中也一样
+static id CustomSelectorObjectPropertyD;
+
+@implementation CustomSelectorObject (KVOTest)
+
+- (NSNumber *)propertyD {
+    return CustomSelectorObjectPropertyD;
+}
+
+- (void)setPropertyD:(NSNumber *)propertyD {
+    CustomSelectorObjectPropertyD = propertyD;
+}
 
 @end

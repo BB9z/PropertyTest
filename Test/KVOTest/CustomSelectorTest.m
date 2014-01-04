@@ -73,7 +73,7 @@
     printf("另一次设置\n");
     obj.propertyA = @(2);
 
-    XCTAssert(count == lastCount, @"两种写法的行为应该一致");
+    XCTAssert(count == lastCount, @"这种写法的行为应该与之前一致");
     lastCount = count;
 
     printf("无成员变量，空有 getter 和 setter 的属性的 KVO 行为\n");
@@ -92,7 +92,26 @@
     printf("另一次设置\n");
     obj.propertyC = @(2);
 
-    XCTAssert(count == lastCount, @"两种写法的行为应该一致");
+    XCTAssert(count == lastCount, @"这种写法的行为应该与之前一致");
+    lastCount = count;
+
+    printf("Category 中属性的 KVO 行为\n");
+    count = 0;
+    [obj rac_addObserver:self forKeyPath:@keypath(obj, propertyD) options:NSKeyValueObservingOptionInitial | NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld | NSKeyValueObservingOptionPrior queue:nil block:^(id observer, NSDictionary *change) {
+        count++;
+        douto(change)
+    }];
+
+    printf("第一次设置\n");
+    obj.propertyD = number;
+
+    printf("重复设置\n");
+    obj.propertyD = number;
+
+    printf("另一次设置\n");
+    obj.propertyD = @(2);
+
+    XCTAssert(count == lastCount, @"这种写法的行为应该与之前一致");
 }
 
 @end

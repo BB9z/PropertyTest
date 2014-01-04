@@ -13,3 +13,8 @@
 @property (strong, nonatomic) NSNumber *propertyB;
 @property (strong, nonatomic) NSNumber *propertyC;
 @end
+
+@interface CustomSelectorObject (KVOTest)
+@property (strong, nonatomic) NSNumber *propertyD;
+
+@end
