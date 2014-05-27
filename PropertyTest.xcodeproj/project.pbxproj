@@ -92,7 +92,6 @@
 		D5DBA31917812AB00026C7CD /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTKeyPathCoding.h; sourceTree = "<group>"; };
 		D5DBA31A17812AB00026C7CD /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
 		D5DBA31B17812AB00026C7CD /* EXTScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTScope.m; sourceTree = "<group>"; };
-		D5DBA31C17812AB00026C7CD /* EXTSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTSwizzle.h; sourceTree = "<group>"; };
 		D5DBA31D17812AB00026C7CD /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
 		D5DBA32017812AB00026C7CD /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
 		D5DBA32117812AB00026C7CD /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
@@ -260,7 +259,6 @@
 				D5DBA31917812AB00026C7CD /* EXTKeyPathCoding.h */,
 				D5DBA31A17812AB00026C7CD /* EXTScope.h */,
 				D5DBA31B17812AB00026C7CD /* EXTScope.m */,
-				D5DBA31C17812AB00026C7CD /* EXTSwizzle.h */,
 				D5DBA31D17812AB00026C7CD /* metamacros.h */,
 			);
 			path = extobjc;
