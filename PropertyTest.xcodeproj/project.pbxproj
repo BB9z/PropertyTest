@@ -12,6 +12,8 @@
 		D5388AA318783F9600A7C87D /* CustomSelectorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D5388AA218783F9600A7C87D /* CustomSelectorTest.m */; };
 		D5388AA6187842E900A7C87D /* CustomSelectorObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D5388AA5187842E900A7C87D /* CustomSelectorObject.m */; };
 		D5448467186DE8110081B74B /* RFPerformance.m in Sources */ = {isa = PBXBuildFile; fileRef = D5448466186DE8110081B74B /* RFPerformance.m */; };
+		D55FB7961944674600358714 /* SimpleLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D55FB7951944674600358714 /* SimpleLogger.m */; };
+		D55FB79919446AAD00358714 /* SimpleConsoleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D55FB79819446AAD00358714 /* SimpleConsoleView.m */; };
 		D56F4BE8186ABC27005DA28D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D56F4BE7186ABC27005DA28D /* Images.xcassets */; };
 		D56F4BEA186ABDEA005DA28D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56F4BE9186ABDEA005DA28D /* XCTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D56F4BF2186AD65F005DA28D /* CategoryPropertyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D56F4BF1186AD65F005DA28D /* CategoryPropertyTest.m */; };
@@ -61,6 +63,10 @@
 		D5388AA5187842E900A7C87D /* CustomSelectorObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSelectorObject.m; sourceTree = "<group>"; };
 		D5448465186DE8110081B74B /* RFPerformance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFPerformance.h; sourceTree = "<group>"; };
 		D5448466186DE8110081B74B /* RFPerformance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFPerformance.m; sourceTree = "<group>"; };
+		D55FB7941944674600358714 /* SimpleLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleLogger.h; path = "Supporting Files/SimpleLogger.h"; sourceTree = "<group>"; };
+		D55FB7951944674600358714 /* SimpleLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleLogger.m; path = "Supporting Files/SimpleLogger.m"; sourceTree = "<group>"; };
+		D55FB79719446AAD00358714 /* SimpleConsoleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleConsoleView.h; path = "Supporting Files/SimpleConsoleView.h"; sourceTree = "<group>"; };
+		D55FB79819446AAD00358714 /* SimpleConsoleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleConsoleView.m; path = "Supporting Files/SimpleConsoleView.m"; sourceTree = "<group>"; };
 		D56F4BE7186ABC27005DA28D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D56F4BE9186ABDEA005DA28D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D56F4BF1186AD65F005DA28D /* CategoryPropertyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryPropertyTest.m; sourceTree = "<group>"; };
@@ -229,6 +235,10 @@
 				D5A00CF9170E47B2009734AA /* InfoPlist.strings */,
 				D5A00CFC170E47B2009734AA /* main.m */,
 				D5A00CFE170E47B2009734AA /* PropertyTest-Prefix.pch */,
+				D55FB7941944674600358714 /* SimpleLogger.h */,
+				D55FB7951944674600358714 /* SimpleLogger.m */,
+				D55FB79719446AAD00358714 /* SimpleConsoleView.h */,
+				D55FB79819446AAD00358714 /* SimpleConsoleView.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -408,8 +418,10 @@
 				D5A00D95170E4D48009734AA /* NSObject+ARCDebug.m in Sources */,
 				D500442517116B2F0075B02A /* dout.m in Sources */,
 				D5448467186DE8110081B74B /* RFPerformance.m in Sources */,
+				D55FB7961944674600358714 /* SimpleLogger.m in Sources */,
 				D5DBA32717812AB00026C7CD /* EXTScope.m in Sources */,
 				D5DBA32917812AB00026C7CD /* JRSwizzle.m in Sources */,
+				D55FB79919446AAD00358714 /* SimpleConsoleView.m in Sources */,
 				D5DBA32B17812AB00026C7CD /* NSObject+RACKVOWrapper.m in Sources */,
 				D5DBA32C17812AB00026C7CD /* RACSwizzling.m in Sources */,
 				D5DBA32F17812ACD0026C7CD /* UIDevice+RFKit.m in Sources */,
