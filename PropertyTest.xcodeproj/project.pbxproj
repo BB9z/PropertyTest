@@ -12,6 +12,7 @@
 		D5388AA318783F9600A7C87D /* CustomSelectorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D5388AA218783F9600A7C87D /* CustomSelectorTest.m */; };
 		D5388AA6187842E900A7C87D /* CustomSelectorObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D5388AA5187842E900A7C87D /* CustomSelectorObject.m */; };
 		D5448467186DE8110081B74B /* RFPerformance.m in Sources */ = {isa = PBXBuildFile; fileRef = D5448466186DE8110081B74B /* RFPerformance.m */; };
+		D55FB7921944605000358714 /* KVOChangeNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D55FB7911944605000358714 /* KVOChangeNotificationViewController.m */; };
 		D55FB7961944674600358714 /* SimpleLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D55FB7951944674600358714 /* SimpleLogger.m */; };
 		D55FB79919446AAD00358714 /* SimpleConsoleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D55FB79819446AAD00358714 /* SimpleConsoleView.m */; };
 		D56F4BE8186ABC27005DA28D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D56F4BE7186ABC27005DA28D /* Images.xcassets */; };
@@ -37,6 +38,7 @@
 		D5DBA32B17812AB00026C7CD /* NSObject+RACKVOWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DBA32417812AB00026C7CD /* NSObject+RACKVOWrapper.m */; };
 		D5DBA32C17812AB00026C7CD /* RACSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DBA32617812AB00026C7CD /* RACSwizzling.m */; };
 		D5DBA32F17812ACD0026C7CD /* UIDevice+RFKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DBA32E17812ACC0026C7CD /* UIDevice+RFKit.m */; };
+		D5E89E7E194AF454008C2EBC /* KVOChangeNotificationTestObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E89E7D194AF454008C2EBC /* KVOChangeNotificationTestObjects.m */; };
 		D5F05A6B1934A407009EDD3B /* TouchEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F05A6A1934A407009EDD3B /* TouchEventViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,8 @@
 		D5388AA5187842E900A7C87D /* CustomSelectorObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSelectorObject.m; sourceTree = "<group>"; };
 		D5448465186DE8110081B74B /* RFPerformance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFPerformance.h; sourceTree = "<group>"; };
 		D5448466186DE8110081B74B /* RFPerformance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFPerformance.m; sourceTree = "<group>"; };
+		D55FB7901944605000358714 /* KVOChangeNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOChangeNotificationViewController.h; sourceTree = "<group>"; };
+		D55FB7911944605000358714 /* KVOChangeNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOChangeNotificationViewController.m; sourceTree = "<group>"; };
 		D55FB7941944674600358714 /* SimpleLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleLogger.h; path = "Supporting Files/SimpleLogger.h"; sourceTree = "<group>"; };
 		D55FB7951944674600358714 /* SimpleLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleLogger.m; path = "Supporting Files/SimpleLogger.m"; sourceTree = "<group>"; };
 		D55FB79719446AAD00358714 /* SimpleConsoleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleConsoleView.h; path = "Supporting Files/SimpleConsoleView.h"; sourceTree = "<group>"; };
@@ -107,6 +111,8 @@
 		D5DBA32617812AB00026C7CD /* RACSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACSwizzling.m; sourceTree = "<group>"; };
 		D5DBA32D17812ACC0026C7CD /* UIDevice+RFKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice+RFKit.h"; path = "category/UIKit/UIDevice+RFKit.h"; sourceTree = "<group>"; };
 		D5DBA32E17812ACC0026C7CD /* UIDevice+RFKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+RFKit.m"; path = "category/UIKit/UIDevice+RFKit.m"; sourceTree = "<group>"; };
+		D5E89E7C194AF454008C2EBC /* KVOChangeNotificationTestObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOChangeNotificationTestObjects.h; sourceTree = "<group>"; };
+		D5E89E7D194AF454008C2EBC /* KVOChangeNotificationTestObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOChangeNotificationTestObjects.m; sourceTree = "<group>"; };
 		D5F05A691934A407009EDD3B /* TouchEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchEventViewController.h; sourceTree = "<group>"; };
 		D5F05A6A1934A407009EDD3B /* TouchEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchEventViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,6 +170,17 @@
 				D5388AA5187842E900A7C87D /* CustomSelectorObject.m */,
 			);
 			path = KVOTest;
+			sourceTree = "<group>";
+		};
+		D55FB78F19445F8700358714 /* KVO Change Notification */ = {
+			isa = PBXGroup;
+			children = (
+				D55FB7901944605000358714 /* KVOChangeNotificationViewController.h */,
+				D55FB7911944605000358714 /* KVOChangeNotificationViewController.m */,
+				D5E89E7C194AF454008C2EBC /* KVOChangeNotificationTestObjects.h */,
+				D5E89E7D194AF454008C2EBC /* KVOChangeNotificationTestObjects.m */,
+			);
+			path = "KVO Change Notification";
 			sourceTree = "<group>";
 		};
 		D56F4BF0186AD64F005DA28D /* CategoryPropertyTest */ = {
@@ -290,6 +307,7 @@
 		D5F05A671934A3CD009EDD3B /* Sub Tests */ = {
 			isa = PBXGroup;
 			children = (
+				D55FB78F19445F8700358714 /* KVO Change Notification */,
 				D5F05A681934A3ED009EDD3B /* Touch Event */,
 			);
 			path = "Sub Tests";
@@ -415,6 +433,7 @@
 				D5F05A6B1934A407009EDD3B /* TouchEventViewController.m in Sources */,
 				D5A00D01170E47B2009734AA /* AppDelegate.m in Sources */,
 				D5A00D0D170E47B2009734AA /* ViewController.m in Sources */,
+				D5E89E7E194AF454008C2EBC /* KVOChangeNotificationTestObjects.m in Sources */,
 				D5A00D95170E4D48009734AA /* NSObject+ARCDebug.m in Sources */,
 				D500442517116B2F0075B02A /* dout.m in Sources */,
 				D5448467186DE8110081B74B /* RFPerformance.m in Sources */,
@@ -424,6 +443,7 @@
 				D55FB79919446AAD00358714 /* SimpleConsoleView.m in Sources */,
 				D5DBA32B17812AB00026C7CD /* NSObject+RACKVOWrapper.m in Sources */,
 				D5DBA32C17812AB00026C7CD /* RACSwizzling.m in Sources */,
+				D55FB7921944605000358714 /* KVOChangeNotificationViewController.m in Sources */,
 				D5DBA32F17812ACD0026C7CD /* UIDevice+RFKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

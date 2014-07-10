@@ -48,6 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="231" y="685"/>
         </scene>
         <!--Touch Event View Controller - Touch Event Chain-->
         <scene sceneID="IDt-4N-DBr">
@@ -224,20 +225,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mfi-oH-zoy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1145" y="685"/>
+            <point key="canvasLocation" x="1195" y="298"/>
+        </scene>
+        <!--Change Notification View Controller - KVO Notification-->
+        <scene sceneID="DlG-oe-N7m">
+            <objects>
+                <viewController id="Lc3-qc-Fpa" customClass="KVOChangeNotificationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kUC-NS-7Se"/>
+                        <viewControllerLayoutGuide type="bottom" id="W6i-HB-RWn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Gy-dd-aqg">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Console" translatesAutoresizingMaskIntoConstraints="NO" id="UwH-tz-jDy" customClass="SimpleConsoleView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="W6i-HB-RWn" firstAttribute="top" secondItem="UwH-tz-jDy" secondAttribute="bottom" id="BBE-EM-itA"/>
+                            <constraint firstItem="UwH-tz-jDy" firstAttribute="top" secondItem="kUC-NS-7Se" secondAttribute="bottom" id="KFS-Ln-G2K"/>
+                            <constraint firstItem="UwH-tz-jDy" firstAttribute="leading" secondItem="1Gy-dd-aqg" secondAttribute="leading" id="LJp-m0-oIp"/>
+                            <constraint firstAttribute="trailing" secondItem="UwH-tz-jDy" secondAttribute="trailing" id="SmN-ae-oqi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="KVO Notification" id="PoL-u0-zpb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PJl-aJ-Uh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1198" y="964"/>
         </scene>
         <!--Table View Controller - Sub Tests-->
         <scene sceneID="1jr-g1-tTP">
             <objects>
                 <tableViewController id="TXl-ax-0VV" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="QuG-A7-qr2">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" id="QuG-A7-qr2">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
                             <tableViewSection id="Ya2-dc-aIk">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="nho-Se-P6G" detailTextLabel="dBc-A1-UNg" rowHeight="50" style="IBUITableViewCellStyleSubtitle" id="the-44-2si">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="nho-Se-P6G" detailTextLabel="dBc-A1-UNg" style="IBUITableViewCellStyleSubtitle" id="the-44-2si">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="the-44-2si" id="Nsg-0S-CPy">
@@ -262,6 +297,33 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="s6x-9k-0YV" kind="push" id="vhB-KH-eig"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Vx3-7c-Ott" detailTextLabel="fd2-I5-Lbg" style="IBUITableViewCellStyleSubtitle" id="Mdw-jJ-ila">
+                                        <rect key="frame" x="0.0" y="50" width="320" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mdw-jJ-ila" id="fcK-8o-iWe">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="49"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="KVO Change Notification" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vx3-7c-Ott">
+                                                    <rect key="frame" x="15" y="6" width="202" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="属性值改变消息发送" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fd2-I5-Lbg">
+                                                    <rect key="frame" x="15" y="28" width="108" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Lc3-qc-Fpa" kind="push" id="Mp5-hI-V1r"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
