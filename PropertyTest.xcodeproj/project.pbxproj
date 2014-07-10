@@ -167,11 +167,11 @@
 		D5388A9E18783F3100A7C87D /* KVOTest */ = {
 			isa = PBXGroup;
 			children = (
-				D5388A9F18783F5800A7C87D /* RACKVOWrapperTest.h */,
-				D5388AA018783F5800A7C87D /* RACKVOWrapperTest.m */,
-				D5388AA218783F9600A7C87D /* CustomSelectorTest.m */,
 				D5388AA4187842E900A7C87D /* CustomSelectorObject.h */,
 				D5388AA5187842E900A7C87D /* CustomSelectorObject.m */,
+				D5388AA218783F9600A7C87D /* CustomSelectorTest.m */,
+				D5388A9F18783F5800A7C87D /* RACKVOWrapperTest.h */,
+				D5388AA018783F5800A7C87D /* RACKVOWrapperTest.m */,
 			);
 			path = KVOTest;
 			sourceTree = "<group>";
@@ -179,10 +179,10 @@
 		D55FB78F19445F8700358714 /* KVO Change Notification */ = {
 			isa = PBXGroup;
 			children = (
-				D55FB7901944605000358714 /* KVOChangeNotificationViewController.h */,
-				D55FB7911944605000358714 /* KVOChangeNotificationViewController.m */,
 				D5E89E7C194AF454008C2EBC /* KVOChangeNotificationTestObjects.h */,
 				D5E89E7D194AF454008C2EBC /* KVOChangeNotificationTestObjects.m */,
+				D55FB7901944605000358714 /* KVOChangeNotificationViewController.h */,
+				D55FB7911944605000358714 /* KVOChangeNotificationViewController.m */,
 			);
 			path = "KVO Change Notification";
 			sourceTree = "<group>";
@@ -201,12 +201,12 @@
 			isa = PBXGroup;
 			children = (
 				D56F4BF1186AD65F005DA28D /* CategoryPropertyTest.m */,
-				D56F4BF3186AD67F005DA28D /* CategoryPropertyTestBaseObject.h */,
-				D56F4BF4186AD67F005DA28D /* CategoryPropertyTestBaseObject.m */,
 				D56F4BF6186BD87A005DA28D /* CategoryPropertyTestBaseObject+A.h */,
 				D56F4BF7186BD87A005DA28D /* CategoryPropertyTestBaseObject+A.m */,
 				D56F4BF9186BD884005DA28D /* CategoryPropertyTestBaseObject+B.h */,
 				D56F4BFA186BD884005DA28D /* CategoryPropertyTestBaseObject+B.m */,
+				D56F4BF3186AD67F005DA28D /* CategoryPropertyTestBaseObject.h */,
+				D56F4BF4186AD67F005DA28D /* CategoryPropertyTestBaseObject.m */,
 			);
 			path = CategoryPropertyTest;
 			sourceTree = "<group>";
@@ -235,9 +235,9 @@
 			children = (
 				D5A00CF4170E47B2009734AA /* CoreGraphics.framework */,
 				D5A00CF2170E47B2009734AA /* Foundation.framework */,
+				D50043BE17116B2F0075B02A /* RFKit */,
 				D5A00CF0170E47B2009734AA /* UIKit.framework */,
 				D56F4BE9186ABDEA005DA28D /* XCTest.framework */,
-				D50043BE17116B2F0075B02A /* RFKit */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -245,16 +245,14 @@
 		D5A00CF6170E47B2009734AA /* PropertyTest */ = {
 			isa = PBXGroup;
 			children = (
-				D5F05A671934A3CD009EDD3B /* Sub Tests */,
-				D5A00CF7170E47B2009734AA /* Supporting Files */,
 				D5A00CFF170E47B2009734AA /* AppDelegate.h */,
 				D5A00D00170E47B2009734AA /* AppDelegate.m */,
+				D56F4BE7186ABC27005DA28D /* Images.xcassets */,
 				D5A00D08170E47B2009734AA /* MainStoryboard.storyboard */,
+				D5F05A671934A3CD009EDD3B /* Sub Tests */,
+				D5A00CF7170E47B2009734AA /* Supporting Files */,
 				D5A00D0B170E47B2009734AA /* ViewController.h */,
 				D5A00D0C170E47B2009734AA /* ViewController.m */,
-				D5A00D93170E4D48009734AA /* NSObject+ARCDebug.h */,
-				D5A00D94170E4D48009734AA /* NSObject+ARCDebug.m */,
-				D56F4BE7186ABC27005DA28D /* Images.xcassets */,
 			);
 			path = PropertyTest;
 			sourceTree = "<group>";
@@ -262,14 +260,16 @@
 		D5A00CF7170E47B2009734AA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D5A00CF8170E47B2009734AA /* PropertyTest-Info.plist */,
 				D5A00CF9170E47B2009734AA /* InfoPlist.strings */,
 				D5A00CFC170E47B2009734AA /* main.m */,
+				D5A00D93170E4D48009734AA /* NSObject+ARCDebug.h */,
+				D5A00D94170E4D48009734AA /* NSObject+ARCDebug.m */,
+				D5A00CF8170E47B2009734AA /* PropertyTest-Info.plist */,
 				D5A00CFE170E47B2009734AA /* PropertyTest-Prefix.pch */,
-				D55FB7941944674600358714 /* SimpleLogger.h */,
-				D55FB7951944674600358714 /* SimpleLogger.m */,
 				D55FB79719446AAD00358714 /* SimpleConsoleView.h */,
 				D55FB79819446AAD00358714 /* SimpleConsoleView.m */,
+				D55FB7941944674600358714 /* SimpleLogger.h */,
+				D55FB7951944674600358714 /* SimpleLogger.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
