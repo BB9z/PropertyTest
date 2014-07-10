@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4Dm-at-R0o">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4Dm-at-R0o">
     <dependencies>
         <deployment version="1536" defaultVersion="1296" identifier="iOS"/>
         <development version="5100" identifier="xcode"/>
@@ -225,7 +225,53 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mfi-oH-zoy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1195" y="298"/>
+            <point key="canvasLocation" x="1203" y="292"/>
+        </scene>
+        <!--View Life Cycle View Controller - Life Cycle-->
+        <scene sceneID="yng-RM-bdV">
+            <objects>
+                <viewController id="WOQ-zm-M77" customClass="ViewLifeCycleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cHN-Ev-MzB"/>
+                        <viewControllerLayoutGuide type="bottom" id="OaF-YK-6PF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ms3-cQ-CrR">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check console output" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVk-Ry-efE">
+                                <rect key="frame" x="76" y="46" width="169" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T74-j0-h6K" customClass="LifeCycleTestView">
+                                <rect key="frame" x="80" y="172" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="J51-vB-CYA"/>
+                                    <constraint firstAttribute="width" constant="160" id="vK3-kS-0Qq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="gVk-Ry-efE" secondAttribute="centerX" id="0gc-5M-YSC"/>
+                            <constraint firstItem="gVk-Ry-efE" firstAttribute="top" secondItem="cHN-Ev-MzB" secondAttribute="bottom" constant="46" id="9Rg-BT-BHx"/>
+                            <constraint firstAttribute="centerX" secondItem="T74-j0-h6K" secondAttribute="centerX" id="JjP-Yf-KX2"/>
+                            <constraint firstAttribute="centerY" secondItem="T74-j0-h6K" secondAttribute="centerY" id="vff-M9-hf7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Life Cycle" id="RbJ-Do-u2d"/>
+                    <connections>
+                        <outlet property="lifeCycleTestView" destination="T74-j0-h6K" id="a89-gX-qJ6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zmE-hP-P36" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1203" y="1636"/>
         </scene>
         <!--Change Notification View Controller - KVO Notification-->
         <scene sceneID="DlG-oe-N7m">
@@ -259,7 +305,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PJl-aJ-Uh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1198" y="964"/>
+            <point key="canvasLocation" x="1203" y="963"/>
         </scene>
         <!--Table View Controller - Sub Tests-->
         <scene sceneID="1jr-g1-tTP">
@@ -324,6 +370,33 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="Lc3-qc-Fpa" kind="push" id="Mp5-hI-V1r"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="dhx-qQ-DFH" detailTextLabel="jGg-7b-0dd" style="IBUITableViewCellStyleSubtitle" id="eDc-3V-PhF">
+                                        <rect key="frame" x="0.0" y="100" width="320" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eDc-3V-PhF" id="9x5-Hn-nXL">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="49"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="View &amp; Controller Life Cycle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dhx-qQ-DFH">
+                                                    <rect key="frame" x="15" y="6" width="223" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="视图及控制器方法执行顺序" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jGg-7b-0dd">
+                                                    <rect key="frame" x="15" y="28" width="144" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="WOQ-zm-M77" kind="push" id="deK-Pu-42H"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>

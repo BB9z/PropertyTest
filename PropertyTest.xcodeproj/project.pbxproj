@@ -15,6 +15,7 @@
 		D55FB7921944605000358714 /* KVOChangeNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D55FB7911944605000358714 /* KVOChangeNotificationViewController.m */; };
 		D55FB7961944674600358714 /* SimpleLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D55FB7951944674600358714 /* SimpleLogger.m */; };
 		D55FB79919446AAD00358714 /* SimpleConsoleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D55FB79819446AAD00358714 /* SimpleConsoleView.m */; };
+		D564CF46196E64F10087B179 /* ViewLifeCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D564CF45196E64F10087B179 /* ViewLifeCycleViewController.m */; };
 		D56F4BE8186ABC27005DA28D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D56F4BE7186ABC27005DA28D /* Images.xcassets */; };
 		D56F4BEA186ABDEA005DA28D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56F4BE9186ABDEA005DA28D /* XCTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D56F4BF2186AD65F005DA28D /* CategoryPropertyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D56F4BF1186AD65F005DA28D /* CategoryPropertyTest.m */; };
@@ -71,6 +72,9 @@
 		D55FB7951944674600358714 /* SimpleLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleLogger.m; path = "Supporting Files/SimpleLogger.m"; sourceTree = "<group>"; };
 		D55FB79719446AAD00358714 /* SimpleConsoleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleConsoleView.h; path = "Supporting Files/SimpleConsoleView.h"; sourceTree = "<group>"; };
 		D55FB79819446AAD00358714 /* SimpleConsoleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleConsoleView.m; path = "Supporting Files/SimpleConsoleView.m"; sourceTree = "<group>"; };
+		D564CF44196E64F10087B179 /* ViewLifeCycleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewLifeCycleViewController.h; sourceTree = "<group>"; };
+		D564CF45196E64F10087B179 /* ViewLifeCycleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewLifeCycleViewController.m; sourceTree = "<group>"; };
+		D564CF47196E65830087B179 /* RFInitializing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RFInitializing.h; sourceTree = "<group>"; };
 		D56F4BE7186ABC27005DA28D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D56F4BE9186ABDEA005DA28D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D56F4BF1186AD65F005DA28D /* CategoryPropertyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryPropertyTest.m; sourceTree = "<group>"; };
@@ -181,6 +185,16 @@
 				D5E89E7D194AF454008C2EBC /* KVOChangeNotificationTestObjects.m */,
 			);
 			path = "KVO Change Notification";
+			sourceTree = "<group>";
+		};
+		D564CF43196E64C80087B179 /* View and Controller Life Cycle */ = {
+			isa = PBXGroup;
+			children = (
+				D564CF47196E65830087B179 /* RFInitializing.h */,
+				D564CF44196E64F10087B179 /* ViewLifeCycleViewController.h */,
+				D564CF45196E64F10087B179 /* ViewLifeCycleViewController.m */,
+			);
+			path = "View and Controller Life Cycle";
 			sourceTree = "<group>";
 		};
 		D56F4BF0186AD64F005DA28D /* CategoryPropertyTest */ = {
@@ -307,6 +321,7 @@
 		D5F05A671934A3CD009EDD3B /* Sub Tests */ = {
 			isa = PBXGroup;
 			children = (
+				D564CF43196E64C80087B179 /* View and Controller Life Cycle */,
 				D55FB78F19445F8700358714 /* KVO Change Notification */,
 				D5F05A681934A3ED009EDD3B /* Touch Event */,
 			);
@@ -430,6 +445,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5A00CFD170E47B2009734AA /* main.m in Sources */,
+				D564CF46196E64F10087B179 /* ViewLifeCycleViewController.m in Sources */,
 				D5F05A6B1934A407009EDD3B /* TouchEventViewController.m in Sources */,
 				D5A00D01170E47B2009734AA /* AppDelegate.m in Sources */,
 				D5A00D0D170E47B2009734AA /* ViewController.m in Sources */,
