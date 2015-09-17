@@ -16,6 +16,7 @@
 		D55FB7961944674600358714 /* SimpleLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D55FB7951944674600358714 /* SimpleLogger.m */; };
 		D55FB79919446AAD00358714 /* SimpleConsoleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D55FB79819446AAD00358714 /* SimpleConsoleView.m */; };
 		D564CF46196E64F10087B179 /* ViewLifeCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D564CF45196E64F10087B179 /* ViewLifeCycleViewController.m */; };
+		D564CF4A196E844D0087B179 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D564CF49196E844D0087B179 /* HomeViewController.m */; };
 		D56F4BE8186ABC27005DA28D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D56F4BE7186ABC27005DA28D /* Images.xcassets */; };
 		D56F4BEA186ABDEA005DA28D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56F4BE9186ABDEA005DA28D /* XCTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D56F4BF2186AD65F005DA28D /* CategoryPropertyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D56F4BF1186AD65F005DA28D /* CategoryPropertyTest.m */; };
@@ -31,16 +32,16 @@
 		D5A00D0A170E47B2009734AA /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A00D08170E47B2009734AA /* MainStoryboard.storyboard */; };
 		D5A00D0D170E47B2009734AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A00D0C170E47B2009734AA /* ViewController.m */; };
 		D5A00D95170E4D48009734AA /* NSObject+ARCDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A00D94170E4D48009734AA /* NSObject+ARCDebug.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D5D33A3F1BAA677400052839 /* ModelPresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D33A3E1BAA677400052839 /* ModelPresentedViewController.m */; };
+		D5D33A441BAA6D7500052839 /* ModelTestParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D33A431BAA6D7500052839 /* ModelTestParentViewController.m */; };
 		D5DBA307178128F30026C7CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A00CF0170E47B2009734AA /* UIKit.framework */; };
 		D5DBA308178128F30026C7CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A00CF2170E47B2009734AA /* Foundation.framework */; };
 		D5DBA30E178128F30026C7CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5DBA30C178128F30026C7CD /* InfoPlist.strings */; };
 		D5DBA32717812AB00026C7CD /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DBA31B17812AB00026C7CD /* EXTScope.m */; };
-		D5DBA32917812AB00026C7CD /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DBA32117812AB00026C7CD /* JRSwizzle.m */; };
-		D5DBA32B17812AB00026C7CD /* NSObject+RACKVOWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DBA32417812AB00026C7CD /* NSObject+RACKVOWrapper.m */; };
-		D5DBA32C17812AB00026C7CD /* RACSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DBA32617812AB00026C7CD /* RACSwizzling.m */; };
 		D5DBA32F17812ACD0026C7CD /* UIDevice+RFKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DBA32E17812ACC0026C7CD /* UIDevice+RFKit.m */; };
 		D5E89E7E194AF454008C2EBC /* KVOChangeNotificationTestObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E89E7D194AF454008C2EBC /* KVOChangeNotificationTestObjects.m */; };
 		D5F05A6B1934A407009EDD3B /* TouchEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F05A6A1934A407009EDD3B /* TouchEventViewController.m */; };
+		D5F7FCD11BAA6E6B0074721A /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F7FCD01BAA6E6B0074721A /* Launch Screen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		D564CF44196E64F10087B179 /* ViewLifeCycleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewLifeCycleViewController.h; sourceTree = "<group>"; };
 		D564CF45196E64F10087B179 /* ViewLifeCycleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewLifeCycleViewController.m; sourceTree = "<group>"; };
 		D564CF47196E65830087B179 /* RFInitializing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RFInitializing.h; sourceTree = "<group>"; };
+		D564CF48196E844D0087B179 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		D564CF49196E844D0087B179 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		D56F4BE7186ABC27005DA28D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D56F4BE9186ABDEA005DA28D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D56F4BF1186AD65F005DA28D /* CategoryPropertyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryPropertyTest.m; sourceTree = "<group>"; };
@@ -99,6 +102,10 @@
 		D5A00D0C170E47B2009734AA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D5A00D93170E4D48009734AA /* NSObject+ARCDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ARCDebug.h"; sourceTree = "<group>"; };
 		D5A00D94170E4D48009734AA /* NSObject+ARCDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ARCDebug.m"; sourceTree = "<group>"; };
+		D5D33A3D1BAA677400052839 /* ModelPresentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelPresentedViewController.h; sourceTree = "<group>"; };
+		D5D33A3E1BAA677400052839 /* ModelPresentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelPresentedViewController.m; sourceTree = "<group>"; };
+		D5D33A421BAA6D7500052839 /* ModelTestParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelTestParentViewController.h; sourceTree = "<group>"; };
+		D5D33A431BAA6D7500052839 /* ModelTestParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelTestParentViewController.m; sourceTree = "<group>"; };
 		D5DBA304178128F30026C7CD /* Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5DBA30B178128F30026C7CD /* Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
 		D5DBA30D178128F30026C7CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -107,18 +114,13 @@
 		D5DBA31A17812AB00026C7CD /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
 		D5DBA31B17812AB00026C7CD /* EXTScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTScope.m; sourceTree = "<group>"; };
 		D5DBA31D17812AB00026C7CD /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
-		D5DBA32017812AB00026C7CD /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
-		D5DBA32117812AB00026C7CD /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
-		D5DBA32317812AB00026C7CD /* NSObject+RACKVOWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RACKVOWrapper.h"; sourceTree = "<group>"; };
-		D5DBA32417812AB00026C7CD /* NSObject+RACKVOWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RACKVOWrapper.m"; sourceTree = "<group>"; };
-		D5DBA32517812AB00026C7CD /* RACSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACSwizzling.h; sourceTree = "<group>"; };
-		D5DBA32617812AB00026C7CD /* RACSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACSwizzling.m; sourceTree = "<group>"; };
 		D5DBA32D17812ACC0026C7CD /* UIDevice+RFKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice+RFKit.h"; path = "category/UIKit/UIDevice+RFKit.h"; sourceTree = "<group>"; };
 		D5DBA32E17812ACC0026C7CD /* UIDevice+RFKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+RFKit.m"; path = "category/UIKit/UIDevice+RFKit.m"; sourceTree = "<group>"; };
 		D5E89E7C194AF454008C2EBC /* KVOChangeNotificationTestObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOChangeNotificationTestObjects.h; sourceTree = "<group>"; };
 		D5E89E7D194AF454008C2EBC /* KVOChangeNotificationTestObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOChangeNotificationTestObjects.m; sourceTree = "<group>"; };
 		D5F05A691934A407009EDD3B /* TouchEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchEventViewController.h; sourceTree = "<group>"; };
 		D5F05A6A1934A407009EDD3B /* TouchEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchEventViewController.m; sourceTree = "<group>"; };
+		D5F7FCD01BAA6E6B0074721A /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,9 +128,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5A00CF1170E47B2009734AA /* UIKit.framework in Frameworks */,
-				D5A00CF3170E47B2009734AA /* Foundation.framework in Frameworks */,
 				D5A00CF5170E47B2009734AA /* CoreGraphics.framework in Frameworks */,
+				D5A00CF3170E47B2009734AA /* Foundation.framework in Frameworks */,
+				D5A00CF1170E47B2009734AA /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,9 +138,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D56F4BEA186ABDEA005DA28D /* XCTest.framework in Frameworks */,
-				D5DBA307178128F30026C7CD /* UIKit.framework in Frameworks */,
 				D5DBA308178128F30026C7CD /* Foundation.framework in Frameworks */,
+				D5DBA307178128F30026C7CD /* UIKit.framework in Frameworks */,
+				D56F4BEA186ABDEA005DA28D /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +153,6 @@
 				D50043F217116B2F0075B02A /* dout.h */,
 				D50043F317116B2F0075B02A /* dout.m */,
 				D5DBA31817812AB00026C7CD /* extobjc */,
-				D5DBA31E17812AB00026C7CD /* ReactiveCocoaMini */,
 				D500440017116B2F0075B02A /* RFARC.h */,
 				D500440117116B2F0075B02A /* RFFeatureSupport.h */,
 				D5448465186DE8110081B74B /* RFPerformance.h */,
@@ -235,9 +236,9 @@
 			children = (
 				D5A00CF4170E47B2009734AA /* CoreGraphics.framework */,
 				D5A00CF2170E47B2009734AA /* Foundation.framework */,
-				D50043BE17116B2F0075B02A /* RFKit */,
 				D5A00CF0170E47B2009734AA /* UIKit.framework */,
 				D56F4BE9186ABDEA005DA28D /* XCTest.framework */,
+				D50043BE17116B2F0075B02A /* RFKit */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -253,6 +254,8 @@
 				D5A00CF7170E47B2009734AA /* Supporting Files */,
 				D5A00D0B170E47B2009734AA /* ViewController.h */,
 				D5A00D0C170E47B2009734AA /* ViewController.m */,
+				D564CF48196E844D0087B179 /* HomeViewController.h */,
+				D564CF49196E844D0087B179 /* HomeViewController.m */,
 			);
 			path = PropertyTest;
 			sourceTree = "<group>";
@@ -270,8 +273,20 @@
 				D55FB79819446AAD00358714 /* SimpleConsoleView.m */,
 				D55FB7941944674600358714 /* SimpleLogger.h */,
 				D55FB7951944674600358714 /* SimpleLogger.m */,
+				D5F7FCD01BAA6E6B0074721A /* Launch Screen.xib */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D5D33A3C1BAA66EA00052839 /* Dismiss then Do Something */ = {
+			isa = PBXGroup;
+			children = (
+				D5D33A3D1BAA677400052839 /* ModelPresentedViewController.h */,
+				D5D33A3E1BAA677400052839 /* ModelPresentedViewController.m */,
+				D5D33A421BAA6D7500052839 /* ModelTestParentViewController.h */,
+				D5D33A431BAA6D7500052839 /* ModelTestParentViewController.m */,
+			);
+			path = "Dismiss then Do Something";
 			sourceTree = "<group>";
 		};
 		D5DBA309178128F30026C7CD /* Test */ = {
@@ -305,25 +320,13 @@
 			path = extobjc;
 			sourceTree = "<group>";
 		};
-		D5DBA31E17812AB00026C7CD /* ReactiveCocoaMini */ = {
-			isa = PBXGroup;
-			children = (
-				D5DBA32017812AB00026C7CD /* JRSwizzle.h */,
-				D5DBA32117812AB00026C7CD /* JRSwizzle.m */,
-				D5DBA32317812AB00026C7CD /* NSObject+RACKVOWrapper.h */,
-				D5DBA32417812AB00026C7CD /* NSObject+RACKVOWrapper.m */,
-				D5DBA32517812AB00026C7CD /* RACSwizzling.h */,
-				D5DBA32617812AB00026C7CD /* RACSwizzling.m */,
-			);
-			path = ReactiveCocoaMini;
-			sourceTree = "<group>";
-		};
 		D5F05A671934A3CD009EDD3B /* Sub Tests */ = {
 			isa = PBXGroup;
 			children = (
-				D564CF43196E64C80087B179 /* View and Controller Life Cycle */,
+				D5D33A3C1BAA66EA00052839 /* Dismiss then Do Something */,
 				D55FB78F19445F8700358714 /* KVO Change Notification */,
 				D5F05A681934A3ED009EDD3B /* Touch Event */,
+				D564CF43196E64C80087B179 /* View and Controller Life Cycle */,
 			);
 			path = "Sub Tests";
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5A00CFB170E47B2009734AA /* InfoPlist.strings in Resources */,
+				D5F7FCD11BAA6E6B0074721A /* Launch Screen.xib in Resources */,
 				D56F4BE8186ABC27005DA28D /* Images.xcassets in Resources */,
 				D5A00D0A170E47B2009734AA /* MainStoryboard.storyboard in Resources */,
 			);
@@ -444,21 +448,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5D33A441BAA6D7500052839 /* ModelTestParentViewController.m in Sources */,
 				D5A00CFD170E47B2009734AA /* main.m in Sources */,
 				D564CF46196E64F10087B179 /* ViewLifeCycleViewController.m in Sources */,
 				D5F05A6B1934A407009EDD3B /* TouchEventViewController.m in Sources */,
 				D5A00D01170E47B2009734AA /* AppDelegate.m in Sources */,
 				D5A00D0D170E47B2009734AA /* ViewController.m in Sources */,
+				D564CF4A196E844D0087B179 /* HomeViewController.m in Sources */,
 				D5E89E7E194AF454008C2EBC /* KVOChangeNotificationTestObjects.m in Sources */,
 				D5A00D95170E4D48009734AA /* NSObject+ARCDebug.m in Sources */,
 				D500442517116B2F0075B02A /* dout.m in Sources */,
 				D5448467186DE8110081B74B /* RFPerformance.m in Sources */,
 				D55FB7961944674600358714 /* SimpleLogger.m in Sources */,
 				D5DBA32717812AB00026C7CD /* EXTScope.m in Sources */,
-				D5DBA32917812AB00026C7CD /* JRSwizzle.m in Sources */,
+				D5D33A3F1BAA677400052839 /* ModelPresentedViewController.m in Sources */,
 				D55FB79919446AAD00358714 /* SimpleConsoleView.m in Sources */,
-				D5DBA32B17812AB00026C7CD /* NSObject+RACKVOWrapper.m in Sources */,
-				D5DBA32C17812AB00026C7CD /* RACSwizzling.m in Sources */,
 				D55FB7921944605000358714 /* KVOChangeNotificationViewController.m in Sources */,
 				D5DBA32F17812ACD0026C7CD /* UIDevice+RFKit.m in Sources */,
 			);
