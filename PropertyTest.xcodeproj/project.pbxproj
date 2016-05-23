@@ -23,6 +23,7 @@
 		D56F4BF5186AD67F005DA28D /* CategoryPropertyTestBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D56F4BF4186AD67F005DA28D /* CategoryPropertyTestBaseObject.m */; };
 		D56F4BF8186BD87A005DA28D /* CategoryPropertyTestBaseObject+A.m in Sources */ = {isa = PBXBuildFile; fileRef = D56F4BF7186BD87A005DA28D /* CategoryPropertyTestBaseObject+A.m */; };
 		D56F4BFB186BD884005DA28D /* CategoryPropertyTestBaseObject+B.m in Sources */ = {isa = PBXBuildFile; fileRef = D56F4BFA186BD884005DA28D /* CategoryPropertyTestBaseObject+B.m */; };
+		D57FBB851CEF1AA5008A3F08 /* AutoMutexLockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D57FBB841CEF1AA5008A3F08 /* AutoMutexLockTestViewController.m */; };
 		D5A00CF1170E47B2009734AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A00CF0170E47B2009734AA /* UIKit.framework */; };
 		D5A00CF3170E47B2009734AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A00CF2170E47B2009734AA /* Foundation.framework */; };
 		D5A00CF5170E47B2009734AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A00CF4170E47B2009734AA /* CoreGraphics.framework */; };
@@ -87,6 +88,8 @@
 		D56F4BF7186BD87A005DA28D /* CategoryPropertyTestBaseObject+A.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CategoryPropertyTestBaseObject+A.m"; sourceTree = "<group>"; };
 		D56F4BF9186BD884005DA28D /* CategoryPropertyTestBaseObject+B.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CategoryPropertyTestBaseObject+B.h"; sourceTree = "<group>"; };
 		D56F4BFA186BD884005DA28D /* CategoryPropertyTestBaseObject+B.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CategoryPropertyTestBaseObject+B.m"; sourceTree = "<group>"; };
+		D57FBB831CEF1AA5008A3F08 /* AutoMutexLockTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoMutexLockTestViewController.h; sourceTree = "<group>"; };
+		D57FBB841CEF1AA5008A3F08 /* AutoMutexLockTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoMutexLockTestViewController.m; sourceTree = "<group>"; };
 		D5A00CED170E47B2009734AA /* PropertyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PropertyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5A00CF0170E47B2009734AA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D5A00CF2170E47B2009734AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -212,6 +215,15 @@
 			path = CategoryPropertyTest;
 			sourceTree = "<group>";
 		};
+		D57FBB821CEF1A7F008A3F08 /* Auto mutex lock */ = {
+			isa = PBXGroup;
+			children = (
+				D57FBB831CEF1AA5008A3F08 /* AutoMutexLockTestViewController.h */,
+				D57FBB841CEF1AA5008A3F08 /* AutoMutexLockTestViewController.m */,
+			);
+			path = "Auto mutex lock";
+			sourceTree = "<group>";
+		};
 		D5A00CE4170E47B1009734AA = {
 			isa = PBXGroup;
 			children = (
@@ -323,6 +335,7 @@
 		D5F05A671934A3CD009EDD3B /* Sub Tests */ = {
 			isa = PBXGroup;
 			children = (
+				D57FBB821CEF1A7F008A3F08 /* Auto mutex lock */,
 				D5D33A3C1BAA66EA00052839 /* Dismiss then Do Something */,
 				D55FB78F19445F8700358714 /* KVO Change Notification */,
 				D5F05A681934A3ED009EDD3B /* Touch Event */,
@@ -456,6 +469,7 @@
 				D5A00D0D170E47B2009734AA /* ViewController.m in Sources */,
 				D564CF4A196E844D0087B179 /* HomeViewController.m in Sources */,
 				D5E89E7E194AF454008C2EBC /* KVOChangeNotificationTestObjects.m in Sources */,
+				D57FBB851CEF1AA5008A3F08 /* AutoMutexLockTestViewController.m in Sources */,
 				D5A00D95170E4D48009734AA /* NSObject+ARCDebug.m in Sources */,
 				D500442517116B2F0075B02A /* dout.m in Sources */,
 				D5448467186DE8110081B74B /* RFPerformance.m in Sources */,
@@ -583,7 +597,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PropertyTest/PropertyTest-Prefix.pch";
 				INFOPLIST_FILE = "PropertyTest/PropertyTest-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -596,7 +610,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PropertyTest/PropertyTest-Prefix.pch";
 				INFOPLIST_FILE = "PropertyTest/PropertyTest-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -25,8 +25,20 @@
 }
 
 - (void)log:(NSString *)string {
-    [self.buffer appendString:string];
-    [self noticeDelegate];
+    static NSDateFormatter *dateFormatter;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"HH':'mm':'ss'.'SSS"];
+    });
+
+    NSString *timeString = [dateFormatter stringFromDate:[NSDate date]];
+    NSString *logString = [NSString stringWithFormat:@"%@: %@", timeString, string];
+    NSLog(@"%@", logString);
+    @synchronized(self.buffer) {
+        [self.buffer appendString:logString];
+        [self noticeDelegate];
+    }
 }
 
 - (void)clear {
